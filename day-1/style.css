@@ -9,6 +9,59 @@
 
 /* COMMON */
 
+body{
+    height: 100%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    /* background-color: aqua; */
+    
+}
+
+/* MAIN */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+}
+
+.box-left{
+    width: 25%; 
+    background-color: lightblue;
+    height: 85vh;
+}
+
+.box-right{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 85vh;    
+    background-color: chocolate;
+}
+
+.right-header{
+    background-color: chartreuse;
+}
+
+.right-main{
+    background-color: crimson;
+}
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 15vh;
+    background-color: grey;
+}
+
+
+
 
 
 
