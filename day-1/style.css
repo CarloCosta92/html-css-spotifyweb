@@ -61,22 +61,30 @@ a{
     flex-direction: column;
     /* width: 75%; */
     flex-grow: 1;
-    height: 85vh;    
-    background-color: chocolate;
+    /* height: 85vh;     */
+    /* background-color: chocolate; */
 }
 
 .right-header{
-    background-color: chartreuse;
+    background-color: #10131a;
+    color: #ffffff;
+    flex-grow: 1;
+    height: 13vh;
 }
 
 .right-main{
-    background-color: crimson;
+    background-color: #151922;
+    color: #ffffff;
+    flex-grow: 1;
+    height: 72vh;
 }
 
 /* BOX-LEFT */
 .box-left{
     background-color: #000000;
     color: #5c5c5c;
+    
+    
 }
 #logo{
     display: none;
@@ -152,7 +160,7 @@ margin-top: auto;
 footer{
     width: 100%;
     height: 15vh;
-    background-color: grey;
+    background-color: #282828;
 }
 
 
@@ -185,13 +193,19 @@ footer{
     }
 
     .playlist {
-        display: unset;
-        
+        display: unset;   
     }
     
     .install,.profile{
         display: unset;
     }
 
-    .hr{display: block;}
+    .hr{
+        display: block;
+        border: 1px solid #5c5c5c;
+    }
+
+    .profile{
+        color: #ffffff;
+    }
 }
