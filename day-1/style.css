@@ -50,6 +50,9 @@ a{
     background-color: lightblue;
     height: 85vh;
     padding: 13px 13px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     
 }
 
@@ -127,6 +130,21 @@ a{
     font-size: 25px;
 }
 
+.left-bottom{
+margin-top: auto;
+}
+
+.download img{
+    display: inline-block;
+    width: 13px;
+    
+}
+
+.install,.profile,.hr {
+    display: none;
+}
+
+
 
 
 /* FOOTER */
@@ -171,4 +189,9 @@ footer{
         
     }
     
+    .install,.profile{
+        display: unset;
+    }
+
+    .hr{display: block;}
 }
