@@ -16,7 +16,7 @@ body{
 .main-container{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    min-height: 100vh;
     /* background-color: aqua; */
     
 }
@@ -42,17 +42,20 @@ a{
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+    height: calc(100%-90px);
     
 }
 
 .box-left{
     width: 50px;
     background-color: lightblue;
-    height: 85vh;
+    /* height: 85vh; */
     padding: 13px 13px 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: #000000;
+    color: #5c5c5c;
     
 }
 
@@ -69,23 +72,20 @@ a{
     background-color: #10131a;
     color: #ffffff;
     flex-grow: 1;
-    height: 13vh;
+    height: 90px;
+    /* height: 13vh; */
 }
 
 .right-main{
     background-color: #151922;
     color: #ffffff;
     flex-grow: 1;
-    height: 72vh;
+    height: 915px;
+    /* height: 72vh; */
 }
 
 /* BOX-LEFT */
-.box-left{
-    background-color: #000000;
-    color: #5c5c5c;
-    
-    
-}
+
 #logo{
     display: none;
 }
@@ -98,12 +98,46 @@ a{
     margin-top: 30px;
 }
 
-
-.box-left li img{
-    display: inline;
-    width: 26px; 
-     
+.box-left ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+.icon-default{
+    width: 25px;
+    height: 25px;
+    background-color: #5c5c5c ;
+    display: inline-block;
+}
+
+.icon-default.home{
+    mask-image: url(/img/home.svg);
+    mask-size: cover;
+}
+
+.icon-default.cerca{
+    mask-image: url(/img/search.svg);
+    mask-size: cover;
+}
+
+.icon-default.libreria{
+    mask-image: url(/img/libreria.svg);
+    mask-size: cover;
+}
+
+.icon-default.download{
+    mask-image: url(/img/download.svg);
+    mask-size: cover;
+}
+
+.icon-default.profilo{
+    mask-image: url(/img/profile.svg);
+    mask-size: cover;
+}
+
+
 
 .main-menu-desc{
     display: none;
@@ -154,9 +188,26 @@ margin-top: auto;
     
 }
 
-
 .install,.profile,.hr {
     display: none;
+}
+
+/* BOX RIGHT TOP */
+.box-right{
+    overflow-y: scroll;
+}
+
+.right-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+}
+.upgrade{
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #ffffff;
+    width: 215px;
 }
 
 
@@ -166,8 +217,9 @@ margin-top: auto;
 
 footer{
     width: 100%;
-    height: 15vh;
+    height: 90px;
     background-color: #282828;
+    
 }
 
 
@@ -178,6 +230,7 @@ footer{
 
 
 @media screen and (min-width:576px)  {
+
 
     .box-left{
         width: 230px;
@@ -190,6 +243,12 @@ footer{
 
     #logo-small {
         display: none;
+    }
+
+    .box-left ul li{
+        
+        justify-content:flex-start;
+        
     }
 
     .main-menu-desc{
