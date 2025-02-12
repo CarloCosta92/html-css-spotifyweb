@@ -126,6 +126,7 @@ a{
 
 .playlist li a{
     color: #858585;
+    line-height: 30px;
 
 }
 
@@ -207,5 +208,6 @@ footer{
 
     .profile{
         color: #ffffff;
+        
     }
 }
