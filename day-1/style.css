@@ -179,10 +179,11 @@ footer{
 
 /* COMPUTER */
 
-@media screen and (min-width:1024px)  {
+@media screen and (min-width:992px)  {
 
     #logo {
         display: block;
+        width: 130px;
     }
 
     #logo-small {
@@ -209,5 +210,9 @@ footer{
     .profile{
         color: #ffffff;
         
+    }
+
+    .box-left{
+        width: 230px;
     }
 }
