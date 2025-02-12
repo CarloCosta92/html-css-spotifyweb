@@ -212,6 +212,8 @@ margin-top: auto;
 
 /* BOX RIGHT MAIN */
 
+    /* type */
+
 .type{
     display: flex;
     justify-content: center;
@@ -247,9 +249,10 @@ margin-top: auto;
 
 .type li:hover .under-type {
     border-color: #adff2f; 
-    background-color: #adff2f; 
-    
+    background-color: #adff2f;   
 }
+
+    /* recently */
 
 
 
