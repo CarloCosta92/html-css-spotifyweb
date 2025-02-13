@@ -27,8 +27,7 @@ img {
 }
 
 li {
-    list-style-type: none;
-    
+    list-style-type: none; 
 }
 
 a{
@@ -54,7 +53,7 @@ i:hover {
 }
 
 
-/* MAIN */
+/* MAIN BOXES */
 
 .container {
     display: flex;
@@ -85,6 +84,7 @@ i:hover {
     /* overflow-y: auto; */
     /* height: 85vh;     */
     /* background-color: chocolate; */
+    overflow-y: scroll; 
 }
 
 .right-header{
@@ -93,7 +93,10 @@ i:hover {
     flex-grow: 1;
     height: 90px;
     /* height: 13vh; */
-
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
 }
 
 .right-main{
@@ -123,7 +126,6 @@ i:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .icon-default{
@@ -158,8 +160,6 @@ i:hover {
     mask-size: cover;
 }
 
-
-
 .main-menu-desc{
     display: none;
 }
@@ -168,8 +168,7 @@ i:hover {
     margin-top: 70px;
 }
 
-.playlist{
-    
+.playlist{ 
     color: #858585;
     display: none; 
 }
@@ -177,13 +176,11 @@ i:hover {
 .playlist h4{
     color: #ffffff;
     margin-bottom: 20px;
-    
 }
 
 .playlist li a{
     color: #858585;
     line-height: 30px;
-
 }
 
 .add-playlist{
@@ -196,18 +193,16 @@ i:hover {
 }
 
 .left-bottom{
-margin-top: auto;
+    margin-top: auto;
 }
 
 .download img{
     display: inline-block;
-    width: 13px;
-    
+    width: 13px;   
 }
 
 .profile{
-    color: #ffffff;
-    
+    color: #ffffff; 
 }
 
 .install,.profile,.hr {
@@ -215,16 +210,7 @@ margin-top: auto;
 }
 
 /* BOX RIGHT TOP */
-.box-right{
-    overflow-y: scroll;  
-}
 
-.right-header{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 5px;
-}
 .upgrade{
     padding: 10px 20px;
     border-radius: 40px;
@@ -239,8 +225,7 @@ margin-top: auto;
 .type{
     display: flex;
     justify-content: center;
-    padding: 0 20px;
-    
+    padding: 0 20px;  
 }
 
 .type ul{
@@ -252,13 +237,15 @@ margin-top: auto;
 }
 
 .type li{
-    width: calc(25% - 20px);
+    /* width: calc(25% - 20px); */
+    flex-wrap: wrap;
     font-size: 0.7em;
     font-weight: 700;
     color: #7b7e82;
     text-align: center;
     display: flex;
     flex-direction: column;  
+    margin-bottom: 50   px;
 }
 
 .under-type{
@@ -266,7 +253,7 @@ margin-top: auto;
     border: 1px solid #151922;
     align-self: center;
     margin-top: 5px;
-    display: none;
+    display: block;
 }
 
 
@@ -284,8 +271,7 @@ margin-top: auto;
 .john-Doe,
 .popular
 {
-    padding: 0 20px; 
-    
+    padding: 0 20px;   
 }
 
 .card-container{
@@ -297,8 +283,7 @@ margin-top: auto;
 }
 
 .card img {
-    max-width: 100%;
-    
+    max-width: 100%; 
   }
 
 .card{
@@ -337,7 +322,6 @@ margin-top: auto;
     display: flex;
     color: #ffffff;
     font-size: 50px;
-
 }
 
 
@@ -376,7 +360,6 @@ footer{
     flex-direction: row;
     justify-content: space-between;
     color: #ffffff;
-    
 }
 
 .song img{
@@ -453,16 +436,11 @@ footer{
 }
 
 .barra{
-
     width: 20%;
     height: 100%;
     background-color: #ffffff;
 
 }
-
-
-
-
 
 /* FOOTER-RIGHT */
 
@@ -495,11 +473,7 @@ footer{
     width: 20%;
     height: 100%;
     background-color: #ffffff;
-
 }
-
-
-
 
 
 /* RESPONSIVE */
@@ -524,9 +498,7 @@ footer{
     }
 
     .box-left ul li{
-        
         justify-content:flex-start;
-        
     }
 
     .main-menu-desc{
