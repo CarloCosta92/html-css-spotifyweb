@@ -1,0 +1,443 @@
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+}
+
+/* COMMON */
+
+body{
+    height: 100%;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex-grow: 1;
+    /* background-color: aqua; */  
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+li {
+    list-style-type: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+/* MAIN */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    min-height: 0;
+}
+
+.box-left{
+    width: 50px;
+    background-color: lightblue;
+    /* height: 85vh; */
+    padding: 13px 13px 20px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #000000;
+    color: #5c5c5c;
+    
+}
+
+.box-right{
+    display: flex;
+    flex-direction: column;
+    /* width: 75%; */
+    flex-grow: 1;
+    /* overflow-y: auto; */
+    /* height: 85vh;     */
+    /* background-color: chocolate; */
+}
+
+.right-header{
+    background-color: #10131a;
+    color: #ffffff;
+    flex-grow: 1;
+    height: 90px;
+    /* height: 13vh; */
+
+}
+
+.right-main{
+    background-color: #151922;
+    color: #ffffff;
+    flex-grow: 1;
+    height: 915px;
+    overflow-y: auto;
+    /* height: 72vh; */
+}
+
+/* BOX-LEFT */
+
+#logo{
+    display: none;
+}
+
+#logo-small{
+    width: 27px;
+}
+
+.box-left ul{
+    margin-top: 30px;
+}
+
+.box-left ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.icon-default{
+    width: 25px;
+    height: 25px;
+    background-color: #5c5c5c ;
+    display: inline-block;
+}
+
+.icon-default.home{
+    mask-image: url(/img/home.svg);
+    mask-size: cover;
+}
+
+.icon-default.cerca{
+    mask-image: url(/img/search.svg);
+    mask-size: cover;
+}
+
+.icon-default.libreria{
+    mask-image: url(/img/libreria.svg);
+    mask-size: cover;
+}
+
+.icon-default.download{
+    mask-image: url(/img/download.svg);
+    mask-size: cover;
+}
+
+.icon-default.profilo{
+    mask-image: url(/img/profile.svg);
+    mask-size: cover;
+}
+
+
+
+.main-menu-desc{
+    display: none;
+}
+
+.left-center{
+    margin-top: 70px;
+}
+
+.playlist{
+    
+    color: #858585;
+    display: none; 
+}
+
+.playlist h4{
+    color: #ffffff;
+    margin-bottom: 20px;
+    
+}
+
+.playlist li a{
+    color: #858585;
+    line-height: 30px;
+
+}
+
+.add-playlist{
+    display: flex;
+    align-items: center;
+}
+
+.fa-square-plus{
+    font-size: 25px;
+}
+
+.left-bottom{
+margin-top: auto;
+}
+
+.download img{
+    display: inline-block;
+    width: 13px;
+    
+}
+
+.profile{
+    color: #ffffff;
+    
+}
+
+.install,.profile,.hr {
+    display: none;
+}
+
+/* BOX RIGHT TOP */
+.box-right{
+    overflow-y: scroll;  
+}
+
+.right-header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+}
+.upgrade{
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 1px solid #ffffff;
+    width: 215px;
+}
+
+/* BOX RIGHT MAIN */
+
+    /* type */
+
+.type{
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    
+}
+
+.type ul{
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.type li{
+    width: calc(25% - 20px);
+    font-size: 0.7em;
+    font-weight: 700;
+    color: #7b7e82;
+    text-align: center;
+    display: flex;
+    flex-direction: column;  
+}
+
+.under-type{
+    width: 30px;
+    border: 1px solid #151922;
+    align-self: center;
+    margin-top: 5px;
+    display: none;
+}
+
+
+.type li:hover .under-type {
+    border-color: #adff2f; 
+    background-color: #adff2f; 
+    display: block;  
+}
+
+    /* section */
+
+
+.recently,
+.john-Doe,
+.popular
+{
+    padding: 0 20px; 
+    
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card img {
+    max-width: 100%;
+    
+  }
+
+.card{
+    width: calc(50% - 10px);
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.popular img{
+    border-radius: 51%;
+}
+
+.card p{
+    color: #7d7f83;
+    font-weight: 600;
+}
+
+/* hover su album */
+.image-container{
+    position: relative;
+}
+
+.album-hover{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-container:hover .album-hover{
+    display: flex;
+    color: #ffffff;
+    font-size: 50px;
+
+}
+
+
+/* FOOTER */
+
+footer{
+    width: 100%;
+    height: 90px;
+    background-color: #282828;
+    /* position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 5; */
+}
+
+
+/* RESPONSIVE */
+
+/* SMALL */
+
+
+@media screen and (min-width:576px)  {
+
+
+    .box-left{
+        width: 230px;
+    }
+
+    #logo {
+        display: block;
+        width: 130px;
+    }
+
+    #logo-small {
+        display: none;
+    }
+
+    .box-left ul li{
+        
+        justify-content:flex-start;
+        
+    }
+
+    .main-menu-desc{
+        display: unset;
+        font-weight: 600;
+    }
+
+    .playlist {
+        display: unset;   
+    }
+    
+    .install,.profile{
+        display: unset;
+    }
+
+    .hr{
+        display: block;
+        border: 1px solid #5c5c5c;
+    }
+
+    /* .type li{
+        width: calc(33% - 20px);
+        font-size: 0.8em;
+    } */
+    
+
+    
+}
+
+
+/* MEDIUM */
+
+@media screen and (min-width:768px)  {
+
+    /* .type li{
+        width: calc(20% - 20px);
+        font-size: 0.9em;
+    } */
+
+    .card-container{
+        justify-content: flex-start;
+
+    }
+
+    .card{
+        width: calc(25% - 15px);
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+    
+
+}
+
+
+/* COMPUTER */
+
+@media screen and (min-width:992px)  {
+
+    .type ul{
+        display: flex;
+        gap: 20px;
+        padding-top: 20px;
+        flex-wrap: nowrap;
+        justify-content: center;
+        white-space: nowrap;
+    }
+
+    .card{
+        width: calc(15% - 5px);
+        margin-bottom: 20px;
+        text-align: center; 
+    }
+
+
+
+ 
+
+
+
+
+}
