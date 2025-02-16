@@ -9,14 +9,12 @@
 
 /* COMMON */
 
-body{
-    height: 100%;
-}
+
 
 .main-container{
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    /* height: 100vh; */
     flex-grow: 1;
     /* background-color: aqua; */  
 }
@@ -103,7 +101,7 @@ i:hover {
     background-color: #151922;
     color: #ffffff;
     flex-grow: 1;
-    height: 915px;
+    /* height: 915px; */
     overflow-y: auto;
     /* height: 72vh; */
 }
@@ -331,10 +329,10 @@ footer{
     width: 100%;
     height: 90px;
     background-color: #282828;
-    /* position: fixed;
+    position: fixed;
     left: 0;
     bottom: 0;
-    z-index: 5; */
+    z-index: 5;
 }
 
 .footer-container{
